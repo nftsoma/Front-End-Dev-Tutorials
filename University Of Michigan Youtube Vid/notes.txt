@@ -1,0 +1,121 @@
+1. <!DOCTYPE html>
+    a. always open the page with the requested language. in this case html is what we want.
+
+2. <head>
+        <meta charset="UTF-8">
+        <title>My first page</title>
+   </head>
+        a. always remember the <meta charset="UTF-8">
+
+3. <body>
+   </body> 
+
+----------COMMON TAGS
+
+1. Headings (block)
+    a. <h1><h2><h3><h4>
+    b. these have syntax and semantics 
+
+2. Paragraphs (block)
+    a. <p> </p>
+    b. should only contain inline elements 
+    c. text, pictures, and other stuff, but not another paragraph inside of a paragraph
+
+3. Divs (block)
+    a. <div></div>
+    b. generic section that is larger than a paragrah
+
+4. Lists 
+    A. Ordered Lists 
+        a. <ol>
+                <li>Item One</li>
+                <li>Item Two</li>
+           </ol>
+
+    B. Unordered Lists
+        a. <ul>
+                <ul>Item One</li>
+                <ul>Item Two</li>
+           </ul>
+
+5. Line Breaks
+    A. <br>
+
+
+----------Images
+
+1. Images (inline)
+    A. <img src = "myPicture.jpg" alt = "Image of Colleen"/>
+        a. carefully size and name your picture before using them 
+    B. Always remember its a name value pair 
+        a. in the example above, the src is the name, and value is "myPicture.jpg"
+           and the value always goes in double quotes 
+    C. Always include an alt attribute 
+        a. this is the information that is presented to someone using a screen reader even
+           if the image is broken. 
+
+
+----------Special Entities
+
+1.  <   =   &lt;
+2.  >   =   &gt;
+3.      =   &copy;
+4.  blank space    =    &nbsp;
+5.      =   &cent;
+6.  &   =   &amp;
+
+
+----------REVIEW
+Q: How do you know the difference between a tag and an attribute
+    A: You have to look for the brackets
+Q: What two symbols end a self-closing tag?
+    A: The forward slash in the closing bracket
+
+
+
+----------USING SEMANTIC TAGS
+
+1. In the beginning( insert dramatic music of your choice...) there was a div
+    A. <div> was a way to group related content together
+    B. Divs almost always had special classes/ids associated with them  
+        a. <div class = "header">   </div>
+        b. <div class = "section">   </div>
+        c. <div class = "footer">    </div>
+            I. by breaking up the divs by header, section and footer, you can go back 
+               and modify only that section of the code 
+
+
+----------<header>
+
+    A. A group of introductory or navigational aids: title, navigation links,etc
+
+<header>
+    <h1>This is the Title</h1>
+    <h2>The author is Colleen</h2>
+</header>
+
+    B. Do not confuse header tag with the head tag. the head tag is only for metadata. 
+
+
+----------<nav>
+
+    A. this section goes to other links within the site itself
+    B. often found in the header tag
+        a. should the nav links include lists?
+
+
+----------<footer>
+
+    A. contains info such as copyright, docs, links to other socials 
+    B. typically at the bottom 
+
+----------REVIEW
+
+        -Do not use divs as much
+        -Use symantec tags for easier navigation 
+
+
+----------Assignment
+    A. create a page called index.html
+    B. utilize header, main, footer
+    C. make sure page validates 
