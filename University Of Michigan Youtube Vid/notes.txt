@@ -119,3 +119,58 @@ Q: What two symbols end a self-closing tag?
     A. create a page called index.html
     B. utilize header, main, footer
     C. make sure page validates 
+
+
+----------Images
+
+    A. JPEG(.jpg, and .jpeg), GIF, PNG 
+    B. SVG and BMP 
+    C. File extensions must be included 
+    D. Every image must be downloaded so size can be a factor
+        a. Think about how big it is on a smartphone, tablet, laptop, monitor 
+    E. Every image requires an HTTP request
+
+----------Image Sizes
+
+    A. When you link to the image, the browsers displays the image as big(or small)as the file
+        a. This is rarely optimal
+    B. "Quick Solutions" - change file, use width/height attributes
+        a. editors change the image permanently
+        b. only works on local files
+
+----------Image Attributes
+    A. Always try to keep style out of your HTML files but..    
+    B. <img> tag includes width and height
+
+    EX-1: DEFAULT IMAGE SIZE
+    <figure>
+        <img src = "imgs/Ashtabula.jpg"
+             alt = "My house">
+        <figcaption>Default image size</figcaption>     
+    </figure>
+
+    C. in the above img function, make sure to always include the source, and make sure to point
+       the file to the picture in question, and then make sure to include the alt text so that 
+       if the image doesnt load, at least there will be something in that space
+
+    EX-2: USING WIDTH IN PIXELS
+    <figure>
+        <img src = "imgs/Ashtabula.jpg"
+             width = "500px" alt = "My house">
+        <figcaption>Set image size</figcaption>     
+    </figure>
+
+    D. in the example above, the <img> tag gets an extra attribute added to it. I believe you   
+       can do the same thing and add a height as well 
+
+    EX-3: USING PERCENTAGES
+    <figure>
+        <img src = "imgs/Ashtabula.jpg"
+             width = "50%" alt = "My house">
+        <figcaption>Relative Image Size</figcaption>     
+    </figure>
+
+----------FAVICON
+    A. You can put image/logo/icon next to the title
+    B. Must go in <head> section 
+        
